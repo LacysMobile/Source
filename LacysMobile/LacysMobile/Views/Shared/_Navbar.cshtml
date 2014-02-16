@@ -1,0 +1,42 @@
+﻿<div class="navbar-header">
+    <a href="/Home" class="navbar-brand logo"></a>
+    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <span class="shopping-cart-icon">
+    <a href="/Cart/Checkout" class="navbar-brand glyphicon glyphicon-shopping-cart"></a>
+    </span>
+</div>
+
+<div class="navbar-collapse collapse" id="navbar-main">
+    <ul class="nav navbar-nav">
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="shop-by-category">Shop by Category <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="themes">
+                <li>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="womens-clothing">Women's Clothing</a>
+                    <ul>
+                        <li>@Html.ActionLink("Dresses", "GetProductsByType", "Products", new { itemType = "WomenDress" }, new { Class = "navbar-link" })</li>
+                        <li>@Html.ActionLink("Coats", "GetProductsByType", "Products", new { itemType = "WomenCoats" }, new { Class = "navbar-link" })</li>
+                    </ul>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="mens-clothing">Men's Clothing</a>
+                    <ul>
+                        <li>@Html.ActionLink("Pants", "GetProductsByType", "Products", new { itemType = "MenPants" }, new { Class = "navbar-link" })</li>
+                        <li>@Html.ActionLink("Coats", "GetProductsByType", "Products", new { itemType = "MenCoats" }, new { Class = "navbar-link" })</li>
+                    </ul>
+                </li>
+                <li class="divider"></li>
+            </ul>
+        </li>
+        <li>
+            @Html.ActionLink("Feedback", "FeedbackForm","Feedback")
+        </li>
+    </ul>
+
+</div>
+

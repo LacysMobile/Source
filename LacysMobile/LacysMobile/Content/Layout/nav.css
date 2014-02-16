@@ -1,0 +1,19 @@
+div.navbar-header a.navbar-brand.logo {
+  background: url(Images/logo.jpg) no-repeat;
+  width: 74px;
+  height: 40px;
+  margin-top: -2px;
+}
+.navbar-default .navbar-nav > li > a {
+  font-size: 16px;
+}
+.dropdown-menu > li > a {
+  font-size: 14px;
+}
+span.shopping-cart-icon {
+  float: right;
+  margin-left: 20px;
+}
+span.shopping-cart-icon a {
+  margin-top: -2px;
+}

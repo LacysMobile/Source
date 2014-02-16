@@ -39,6 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="dotless.Core">
+      <HintPath>..\packages\dotless.1.4.0.0\lib\dotless.Core.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -127,7 +130,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\FeedbackController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -135,81 +141,104 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\images\ajax-loader.gif" />
-    <Content Include="Content\images\ajax-loader.png" />
-    <Content Include="Content\images\icons-18-black.png" />
-    <Content Include="Content\images\icons-18-white.png" />
-    <Content Include="Content\images\icons-36-black.png" />
-    <Content Include="Content\images\icons-36-white.png" />
-    <Content Include="Content\jquery.mobile-1.1.0.css" />
-    <Content Include="Content\jquery.mobile-1.1.0.min.css" />
-    <Content Include="Content\jquery.mobile.structure-1.1.0.css" />
-    <Content Include="Content\jquery.mobile.structure-1.1.0.min.css" />
-    <Content Include="Content\jquery.mobile.theme-1.1.0.css" />
-    <Content Include="Content\jquery.mobile.theme-1.1.0.min.css" />
-    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
-    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
-    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
-    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
-    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
-    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
-    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
-    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
-    <Content Include="Content\themes\base\jquery-ui.css" />
-    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
-    <Content Include="Content\themes\base\jquery.ui.all.css" />
-    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
-    <Content Include="Content\themes\base\jquery.ui.base.css" />
-    <Content Include="Content\themes\base\jquery.ui.button.css" />
-    <Content Include="Content\themes\base\jquery.ui.core.css" />
-    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
-    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
-    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
-    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
-    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
-    <Content Include="Content\themes\base\jquery.ui.slider.css" />
-    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
-    <Content Include="Content\themes\base\jquery.ui.theme.css" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
-    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
-    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
-    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
-    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
-    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
-    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
-    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
-    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\Bootstrap\BootstrapTheme\bootstrapTheme.css" />
+    <Content Include="Content\Bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\Bootstrap\less\bootstrap.css">
+      <DependentUpon>bootstrap.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Bootstrap\less\bootstrap.min.css">
+      <DependentUpon>bootstrap.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Layout\footer.css">
+      <DependentUpon>footer.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Layout\footer.min.css">
+      <DependentUpon>footer.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Layout\Images\logo.jpg" />
+    <Content Include="Content\Layout\layout.css">
+      <DependentUpon>layout.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Layout\layout.min.css">
+      <DependentUpon>layout.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Layout\nav.css">
+      <DependentUpon>nav.less</DependentUpon>
+    </Content>
+    <Content Include="Content\Layout\nav.min.css">
+      <DependentUpon>nav.less</DependentUpon>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
-    <Content Include="Scripts\jquery-1.7.1.js" />
-    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Content\Bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\Bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\Bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\Bootstrap\less\.csscomb.json" />
+    <Content Include="Content\Bootstrap\less\.csslintrc" />
+    <Content Include="Content\Bootstrap\less\alerts.less" />
+    <Content Include="Content\Bootstrap\less\badges.less" />
+    <Content Include="Content\Bootstrap\less\bootstrap.less" />
+    <Content Include="Content\Bootstrap\less\breadcrumbs.less" />
+    <Content Include="Content\Bootstrap\less\button-groups.less" />
+    <Content Include="Content\Bootstrap\less\buttons.less" />
+    <Content Include="Content\Bootstrap\less\carousel.less" />
+    <Content Include="Content\Bootstrap\less\close.less" />
+    <Content Include="Content\Bootstrap\less\code.less" />
+    <Content Include="Content\Bootstrap\less\component-animations.less" />
+    <Content Include="Content\Bootstrap\less\dropdowns.less" />
+    <Content Include="Content\Bootstrap\less\forms.less" />
+    <Content Include="Content\Bootstrap\less\glyphicons.less" />
+    <Content Include="Content\Bootstrap\less\grid.less" />
+    <Content Include="Content\Bootstrap\less\input-groups.less" />
+    <Content Include="Content\Bootstrap\less\jumbotron.less" />
+    <Content Include="Content\Bootstrap\less\labels.less" />
+    <Content Include="Content\Bootstrap\less\list-group.less" />
+    <Content Include="Content\Bootstrap\less\media.less" />
+    <Content Include="Content\Bootstrap\less\mixins.less" />
+    <Content Include="Content\Bootstrap\less\modals.less" />
+    <Content Include="Content\Bootstrap\less\navbar.less" />
+    <Content Include="Content\Bootstrap\less\navs.less" />
+    <Content Include="Content\Bootstrap\less\normalize.less" />
+    <Content Include="Content\Bootstrap\less\pager.less" />
+    <Content Include="Content\Bootstrap\less\pagination.less" />
+    <Content Include="Content\Bootstrap\less\panels.less" />
+    <Content Include="Content\Bootstrap\less\popovers.less" />
+    <Content Include="Content\Bootstrap\less\print.less" />
+    <Content Include="Content\Bootstrap\less\progress-bars.less" />
+    <Content Include="Content\Bootstrap\less\responsive-utilities.less" />
+    <Content Include="Content\Bootstrap\less\scaffolding.less" />
+    <Content Include="Content\Bootstrap\less\tables.less" />
+    <Content Include="Content\Bootstrap\less\theme.less" />
+    <Content Include="Content\Bootstrap\less\thumbnails.less" />
+    <Content Include="Content\Bootstrap\less\tooltip.less" />
+    <Content Include="Content\Bootstrap\less\type.less" />
+    <Content Include="Content\Bootstrap\less\utilities.less" />
+    <Content Include="Content\Bootstrap\less\variables.less" />
+    <Content Include="Content\Bootstrap\less\wells.less" />
+    <Content Include="Content\Bootstrap\less\bootswatch.less" />
+    <Content Include="Scripts\Bootstrap\affix.js" />
+    <Content Include="Scripts\Bootstrap\alert.js" />
+    <Content Include="Scripts\Bootstrap\button.js" />
+    <Content Include="Scripts\Bootstrap\carousel.js" />
+    <Content Include="Scripts\Bootstrap\collapse.js" />
+    <Content Include="Scripts\Bootstrap\dropdown.js" />
+    <Content Include="Scripts\Bootstrap\modal.js" />
+    <Content Include="Scripts\Bootstrap\popover.js" />
+    <Content Include="Scripts\Bootstrap\scrollspy.js" />
+    <Content Include="Scripts\Bootstrap\tab.js" />
+    <Content Include="Scripts\Bootstrap\tooltip.js" />
+    <Content Include="Scripts\Bootstrap\transition.js" />
+    <Content Include="Content\Layout\layout.less" />
+    <Content Include="Content\Layout\nav.less" />
+    <Content Include="Content\Layout\footer.less" />
+    <None Include="Scripts\jquery-2.1.0.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.0.js" />
+    <Content Include="Scripts\jquery-2.1.0.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
     <Content Include="Scripts\jquery.mobile-1.1.0.js" />
     <Content Include="Scripts\jquery.mobile-1.1.0.min.js" />
+    <Content Include="Scripts\jquery-2.1.0.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
@@ -227,7 +256,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Account\ChangePassword.cshtml" />
@@ -235,13 +263,16 @@
     <Content Include="Views\Account\Index.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\Shared\_Navbar.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Products\GetProductsByType.cshtml" />
+    <Content Include="Views\Feedback\FeedbackForm.cshtml" />
+    <Content Include="Views\Cart\Checkout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

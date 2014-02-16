@@ -1,14 +1,13 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
+﻿<body>
 
-<h2>@ViewBag.Message</h2>
-<p>
-    To learn more about ASP.NET MVC visit <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
-</p>
-
-<ul data-role="listview" data-inset="true">
-    <li data-role="list-divider">Navigation</li>
-    <li>@Html.ActionLink("About", "About", "Home")</li>
-    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-</ul>
+    <div class="page-header" id="banner">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1>@ViewBag.Header</h1>
+                <p class="lead">Quality Retail Shopping</p>
+            </div>
+            <div class="col-lg-6">
+            </div>
+        </div>
+    </div>
+</body>

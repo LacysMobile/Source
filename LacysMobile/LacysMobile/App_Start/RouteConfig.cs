@@ -14,9 +14,15 @@ namespace LacysMobile
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Products",
+                url: "Products/GetProductsByType/{itemType}",
+                defaults: new { controller = "Products", action = "GetProductsByType", itemType = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional}
             );
         }
     }
