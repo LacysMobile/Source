@@ -31,3 +31,36 @@ C:\Users\VickiFulgham\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System
 C:\Users\VickiFulgham\Documents\GitHub\Source\LacysMobile\LacysMobile\obj\Debug\LacysMobile.dll
 C:\Users\VickiFulgham\Documents\GitHub\Source\LacysMobile\LacysMobile\obj\Debug\LacysMobile.pdb
 C:\Users\VickiFulgham\Documents\GitHub\Source\LacysMobile\LacysMobile\obj\Debug\LacysMobile.csprojResolveAssemblyReference.cache
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\LacysMobile.dll
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\LacysMobile.pdb
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\Antlr3.Runtime.dll
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\dotless.Core.dll
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\EntityFramework.dll
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\Newtonsoft.Json.dll
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Net.Http.Formatting.dll
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Web.Helpers.dll
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Web.Http.dll
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Web.Http.WebHost.dll
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Web.Mvc.dll
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Web.Optimization.dll
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Web.Providers.dll
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Web.Razor.dll
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Web.WebPages.dll
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Web.WebPages.Razor.dll
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\WebGrease.dll
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\EntityFramework.xml
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\Newtonsoft.Json.xml
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Net.Http.Formatting.xml
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Web.Helpers.xml
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Web.Http.xml
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Web.Http.WebHost.xml
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Web.Mvc.xml
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Web.Razor.xml
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Web.WebPages.xml
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\bin\System.Web.WebPages.Razor.xml
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\obj\Debug\LacysMobile.csprojResolveAssemblyReference.cache
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\obj\Debug\LacysMobile.dll
+C:\Users\Jaxon Pickett\Documents\GitHub\Source\LacysMobile\LacysMobile\obj\Debug\LacysMobile.pdb
