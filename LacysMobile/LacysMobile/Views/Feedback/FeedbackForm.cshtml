@@ -8,7 +8,101 @@
             <h1>@ViewBag.Header</h1>
             @*<p class="lead">Quality Retail Shopping</p>*@
         </div>
-        <div class="col-lg-6">
-        </div>
+
+<div class="col-lg-6"></div>  
     </div>
+
+
+
 </div>
+
+
+
+<div class="container">
+    <h4>We want to hear from you! <br /> Fill out the form below to contact a Lacy's representative.</h4>
+
+
+    <!-- Form Section -->
+    <form class="form-horizontal">
+        <fieldset>
+
+            <!-- Text input-->
+            <div class="control-group">
+                <label class="control-label" for="textinput">Name</label>
+                <div class="controls">
+                <div class="input-prepend">
+                        <input id="textinput" name="textinput" type="text" placeholder="Your Name" class="input-large" required="">
+                    </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="control-group">
+                <label class="control-label" for="textinput">Email</label>
+                < class="controls">
+                    <div class="input-prepend">
+                        <input id="textinput" name="textinput" type="text" placeholder="Your Email" class="input-large" required="">
+                    </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="control-group">
+                <label class="control-label" for="textinput">Phone</label>
+                <div class="controls">
+                <div class="input-prepend">
+                        <input id="textinput" name="textinput" type="text" placeholder="Phone (optional)" class="input-large">
+                    </div>
+            </div>
+
+            <!-- Textarea -->
+            <div class="control-group">
+                <label class="control-label" for="textarea">Comment/Question</label>
+                <div class="controls">
+                    <textarea id="textarea" name="textarea">Please provide your detailed comments or questions here...</textarea>
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="control-group">
+                <label class="control-label" for="selectbasic">Category</label>
+                <div class="controls">
+                    <select id="selectbasic" name="selectbasic" class="input-large">
+                        <option>Online Store</option>
+                        <option>In-Store Visit</option>
+                        <option>General Question</option>
+                        <option>General Comments</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Multiple Radios -->
+            <div class="control-group">
+                <label class="control-label" for="radios">Prefered Contact</label>
+                <div class="controls">
+                    <label class="radio" for="radios-0">
+                        <input type="radio" name="radios" id="radios-0" value="Email" checked="checked">
+                        Email
+                    </label>
+                    <label class="radio" for="radios-1">
+                        <input type="radio" name="radios" id="radios-1" value="Phone">
+                        Phone
+                    </label>
+                    <label class="radio" for="radios-2">
+                        <input type="radio" name="radios" id="radios-2" value="None">
+                        None
+                    </label>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="singlebutton"></label>
+                <div class="controls">
+                    <button id="singlebutton" name="singlebutton" class="btn btn-default">Sumbit</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+
+
+</div>
+
